@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "WINUI3_BOOKMS2 (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "WINUI3_BOOKMS2 (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

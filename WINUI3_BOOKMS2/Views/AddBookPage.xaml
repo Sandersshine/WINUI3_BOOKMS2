@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="WINUI3_BOOKMS2.Views.AddBookPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea">
+		<StackPanel Orientation="Vertical" Grid.Row="0">
+			<TextBox Text="{x:Bind ViewModel.NameTextBox, Mode=TwoWay}" PlaceholderText="书名" Margin="0,0,0,10"/>
+			<TextBox Text="{x:Bind ViewModel.AuthorTextBox, Mode=TwoWay}" PlaceholderText="作者" Margin="0,0,0,10" />
+			<TextBox Text="{x:Bind ViewModel.PressTextBox, Mode=TwoWay}" PlaceholderText="出版社" Margin="0,0,0,10" />
+
+			<StackPanel Grid.Row="0" Margin="0,0,0,10" Orientation="Horizontal" HorizontalAlignment="Left">
+				<Button Content="添加书籍" Command="{x:Bind ViewModel.AddBookCommand}"/>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Page>
